@@ -1,2 +1,9 @@
 # Project exclude paths
 /out/
+# Package file
+*.jar
+
+# Large media files
+* .mp4
+* .avi
+* . mov

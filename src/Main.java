@@ -3,12 +3,13 @@ public class Main {
 
         // byte type
         byte a1 = 0;
-        byte b1 = 127;
+        byte b1=85, t88 = 127;
         byte m1 = -128;
         System.out.println("byte type example");
         System.out.println("a1 is: " + a1);
         System.out.println("b1 is: " + b1);
         System.out.println("m1 is: " + m1);
+        System.out.println("m1 is: " + t88);
 
         // short type
         short a2 = 129;
@@ -37,6 +38,19 @@ public class Main {
         System.out.println("b4 is: " + b4);
         System.out.println("b4 is: " + b4);
 
+        int lightspeed;
+        long days ;
+        long seconds ;
+        long distance ;
+        lightspeed = 186000; // приблизительная скорость света , миль в секунду
+        days = 1000; // указать количества дней
+        seconds = days * 24 *60 *60; // преобразовать в секунды
+        distance = lightspeed * seconds; // вычислить расстояние
+        System.out.print ( " Зa " + days ) ;
+        System.out.print (" дней свет пройдет около " ) ;
+        System.out.println ( distance + " миль." ) ;
+
+
         // float type
         float f5;
         f5 = 12.5F;
@@ -53,6 +67,12 @@ public class Main {
         System.out.println("l6 is: " + l6);
         System.out.println("m6 is: " + m6);
 
+        double pi, r, a;
+        r = 10.8; //радиус окружности
+        pi = 3.1416;  //приблизительное значение числа пи
+        a = pi * r * r; //вычислить площадь круга
+        System.out.println("Плoщaдь круга равна " + a);
+
         //char type
         char ch1 = 'Y';
         char ch2 = 'M';
@@ -62,6 +82,13 @@ public class Main {
         System.out.println("ch2 is: " + ch2);
         System.out.println("ch3 is: " + ch3);
 
+        char text1, text2;
+        text1 = 88; // код символа Х
+        text2 = 'Y';
+        System.out.print ( " text1 и text2:");
+        System.out.println ( text1 + " "  + text2 ) ;
+
+
         //boolean type
         boolean b;
         b = false;
@@ -69,6 +96,17 @@ public class Main {
         System.out.println("boolean type example");
         System.out.println("b is: " + b);
         System.out.println("t is: " + t);
+
+        //. Управляющие последовательности символов
+
+        System.out.println("text1\\text2");
+        System.out.println("text1\'text2");
+        System.out.println("text1\"text2");
+        System.out.println("text44\rtext55");
+        System.out.println("text3\ntext4");
+        System.out.println("text111\ftext222");
+        System.out.println("texttttt\tTTextTTTTT");
+        System.out.println("textB\bBtext");
 
     }
 }
